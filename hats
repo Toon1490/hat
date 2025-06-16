@@ -1,7 +1,5 @@
 local Charar = game.Players.LocalPlayer.Character
 Charar["InternationalFedora"].Name = "InternationalFedora2"
-Charar["InternationalFedora"].Name = "InternationalFedora3"
-Charar["InternationalFedora"].Name = "InternationalFedora4"
 --I dont need hat clone thingy
 local v3_net, v3_808 = Vector3.new(5000, 25.1, 0), Vector3.new(8, 0, 8)
     local function getNetlessVelocity(realPartVelocity)
@@ -875,7 +873,7 @@ end
 
 
 
-local hat2 = gp(cplayer, "MeshPartAccessory", "Accessory")
+local hat2 = gp(cplayer, "Accessory (Shark)", "Accessory")
 local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Torso"] --any part of humanoid
@@ -883,28 +881,28 @@ att2.Position = Vector3.new(-0, 0.025, 0)
 att2.Rotation = Vector3.new(180, 0, -15)--you can delete this 
 
 
-local hat2 = gp(cplayer, "InternationalFedora2", "Accessory")
+local hat2 = gp(cplayer, "LARM", "Accessory")
 local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Left Arm"]
 att2.Position = Vector3.new(-0.15, -0.35, -0)
 att2.Rotation = Vector3.new(-90, -0, 90)
 
-local hat2 = gp(cplayer, "InternationalFedora", "Accessory")
+local hat2 = gp(cplayer, "RARM", "Accessory")
 local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Right Arm"]
 att2.Position = Vector3.new(0.15, -0.3, 0)
 att2.Rotation = Vector3.new(-90, 0, -90) --LavanderHair
 
-local hat2 = gp(cplayer, "InternationalFedora3", "Accessory")
+local hat2 = gp(cplayer, "Unloaded head", "Accessory")
 local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Right Leg"]
 att2.Position = Vector3.new(0, -0, 0.5) --Robloxclassicred
 att2.Rotation = Vector3.new(0, -5, -45)
 
-local hat2 = gp(cplayer, "InternationalFedora4", "Accessory")
+local hat2 = gp(cplayer, "MeshPartAccessory", "Accessory")
 local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Left Leg"]
