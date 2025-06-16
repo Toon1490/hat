@@ -101,7 +101,7 @@ for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants
 		end)
 	end
 end
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/BloxinStud10/RNTE/main/Free%20Stuff"),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Toon1490/hat/refs/heads/main/hats"),true))()
 game:GetService("Players").LocalPlayer.Character.Head.Anchored = false
 game:GetService("Players").LocalPlayer.Character["Starslayer Railgun"].Handle["att1_Handle"].Name = "att2_Handle"
 game:GetService("Players").LocalPlayer.Character.Back_AccAccessory.Handle["att1_Handle"].Name = "att3_Handle"
