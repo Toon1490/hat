@@ -1,3 +1,5 @@
+--local Charar = game.Players.LocalPlayer.Character
+--Charar["InternationalFedora"].Name = "InternationalFedora2"
 --I dont need hat clone thingy
 local v3_net, v3_808 = Vector3.new(5000, 25.1, 0), Vector3.new(8, 0, 8)
     local function getNetlessVelocity(realPartVelocity)
@@ -870,8 +872,15 @@ end
 
 
 
+local hat2 = gp(cplayer, "Meshes/meshPartAccessory", "Accessory")
+local handle2 = gp(hat2, "Handle", "BasePart")
+local att2 = gp(handle2, "att1_Handle", "Attachment")
+att2.Parent = cplayer["Head"] --any part of humanoid
+att2.Position = Vector3.new(0, 5, 0)
+att2.Rotation = Vector3.new(0, 0, 0)--you can delete this 
 
-local hat2 = gp(cplayer, "Accessory (Shark)", "Accessory")
+
+local hat2 = gp(cplayer, ["Accessory (Shark)"], "Accessory")
 local handle2 = gp(hat2, "Handle", "BasePart")
 local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Torso"] --any part of humanoid
