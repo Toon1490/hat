@@ -103,7 +103,7 @@ for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants
 end
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Toon1490/hat/refs/heads/main/hats"),true))()
 game:GetService("Players").LocalPlayer.Character.Head.Anchored = false
-game:GetService("Players").LocalPlayer.Character["Starslayer Railgun"].Handle["att1_Handle"].Name = "att2_Handle"
+game:GetService("Players").LocalPlayer.Character["PogoStick"].Handle["att1_Handle"].Name = "att2_Handle"
 game:GetService("Players").LocalPlayer.Character.Back_AccAccessory.Handle["att1_Handle"].Name = "att3_Handle"
 setfpscap(120)
 function swait()
@@ -875,7 +875,7 @@ end
 function CharacterFade(COLOR,TIMER)
 end
 
-Character["Starslayer Railgun"].Handle.att2_Handle.Parent = RightArm
+Character["PogoStick"].Handle.att2_Handle.Parent = RightArm
 RightArm.att2_Handle.Rotation = Vector3.new(45, 90, 0)
 RightArm.att2_Handle.Position = Vector3.new(0, -2.4, -1.1)  
 
@@ -3861,15 +3861,15 @@ coroutine.resume(coroutine.create(function()
         end
         if MODE ~= "Katana" and AlignedGun == true then
             AlignedGun = false
-            Character["Starslayer Railgun"].Handle.att2_Handle.Parent = RightArm
+            Character[""].Handle.att2_Handle.Parent = RightArm
             RightArm.att2_Handle.Rotation = Vector3.new(45, 90, 0)
             RightArm.att2_Handle.Position = Vector3.new(0, -2.4, -1.1)  
         end
         if MODE == "Katana" and AlignedGun == false then
             AlignedGun = true
-            RightArm.att2_Handle.Parent = Character["Starslayer Railgun"].Handle
-            Character["Starslayer Railgun"].Handle.att2_Handle.Rotation = Vector3.new(0, 0, 0)
-            Character["Starslayer Railgun"].Handle.att2_Handle.Position = Vector3.new(0, 0, 0)
+            RightArm.att2_Handle.Parent = Character["PogoStick"].Handle
+            Character["PogoStick"].Handle.att2_Handle.Rotation = Vector3.new(0, 0, 0)
+            Character["PogoStick"].Handle.att2_Handle.Position = Vector3.new(0, 0, 0)
         end
     end
 end))
