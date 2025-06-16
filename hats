@@ -1,5 +1,3 @@
-local Charar = game.Players.LocalPlayer.Character
-Charar["InternationalFedora"].Name = "InternationalFedora2"
 --I dont need hat clone thingy
 local v3_net, v3_808 = Vector3.new(5000, 25.1, 0), Vector3.new(8, 0, 8)
     local function getNetlessVelocity(realPartVelocity)
