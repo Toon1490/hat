@@ -1,5 +1,3 @@
-local Charar = game.Players.LocalPlayer.Character
-Charar["InternationalFedora"].Name = "InternationalFedora2"
 --I dont need hat clone thingy
 local v3_net, v3_808 = Vector3.new(5000, 25.1, 0), Vector3.new(8, 0, 8)
     local function getNetlessVelocity(realPartVelocity)
@@ -869,49 +867,3 @@ local function gp(parent, name, className)
     end
     return nil
 end
-
-
-
-local hat2 = gp(cplayer, "Meshes/meshPartAccessory", "Accessory")
-local handle2 = gp(hat2, "Handle", "BasePart")
-local att2 = gp(handle2, "att1_Handle", "Attachment")
-att2.Parent = cplayer["Head"] --any part of humanoid
-att2.Position = Vector3.new(-7.367026329040527, 5.417507171630859, 78.93795776367188)
-att2.Rotation = Vector3.new(0, 0, 0)--you can delete this 
-
-
-local hat2 = gp(cplayer, "Accessory (Shark)", "Accessory")
-local handle2 = gp(hat2, "Handle", "BasePart")
-local att2 = gp(handle2, "att1_Handle", "Attachment")
-att2.Parent = cplayer["Torso"] --any part of humanoid
-att2.Position = Vector3.new(-7.366999626159668, 3.9072203636169434, 78.9402084350586)
-att2.Rotation = Vector3.new(0, 0, 0)--you can delete this 
-
-
-local hat2 = gp(cplayer, "LARM", "Accessory")
-local handle2 = gp(hat2, "Handle", "BasePart")
-local att2 = gp(handle2, "att1_Handle", "Attachment")
-att2.Parent = cplayer["Left Arm"]
-att2.Position = Vector3.new(-5.871830463409424, 3.9000000953674316, 79)
-att2.Rotation = Vector3.new(90, 89, 0)
-
-local hat2 = gp(cplayer, "RARM", "Accessory")
-local handle2 = gp(hat2, "Handle", "BasePart")
-local att2 = gp(handle2, "att1_Handle", "Attachment")
-att2.Parent = cplayer["Right Arm"]
-att2.Position = Vector3.new(-8.854390144348145, 3.9000000953674316, 79)
-att2.Rotation = Vector3.new(90, 89, 0) --LavanderHair
-
-local hat2 = gp(cplayer, "Unloaded head", "Accessory")
-local handle2 = gp(hat2, "Handle", "BasePart")
-local att2 = gp(handle2, "att1_Handle", "Attachment")
-att2.Parent = cplayer["Right Leg"]
-att2.Position = Vector3.new(-6.866999626159668, 1.9297752380371094, 78.9402084350586) --Robloxclassicred
-att2.Rotation = Vector3.new(-90, -90, 0)
-
-local hat2 = gp(cplayer, "MeshPartAccessory", "Accessory")
-local handle2 = gp(hat2, "Handle", "BasePart")
-local att2 = gp(handle2, "att1_Handle", "Attachment")
-att2.Parent = cplayer["Left Leg"]
-att2.Position = Vector3.new(-7.866999626159668, 1.9329627752304077, 78.9402084350586) 
-att2.Rotation = Vector3.new(90, 90, 0)
