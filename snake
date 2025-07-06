@@ -75,36 +75,9 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	    Icon = "rbxthumb://type=Asset&id=1030775394&w=150&h=150"})
     Duration = 7
 local FunnyEffects = false
-local RemoveAnimate = true
-game.Players.LocalPlayer.Character.Animate.Parent = nil
-game.Players.LocalPlayer.Character.Humanoid.Animator.Parent = nil
-game:GetService("Players").LocalPlayer.Character.Head.Anchored = true
-for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
- if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then
- game:GetService("RunService").Heartbeat:connect(function()
- v.Velocity = Vector3.new(0,35,0)
-    wait(0.5)
-   end)
-  end
-end
-game.TestService.IsSleepAllowed = false
-for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
-	if v:IsA("BasePart") then 
-		game:GetService("RunService").Heartbeat:connect(function()
-			v.Velocity = Vector3.new(-40,0,-10)
-			pcall(function()
-				v.CanCollide = false
-			end)
-			pcall(function()
-				v.CanQuery = false
-			end)
-		end)
-	end
-end
+local RemoveAnimate = false
+
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Toon1490/hat/refs/heads/main/hats"),true))()
-game:GetService("Players").LocalPlayer.Character.Head.Anchored = false
-game:GetService("Players").LocalPlayer.Character["PogoStick"].Handle["att1_Handle"].Name = "att2_Handle"
-game:GetService("Players").LocalPlayer.Character.Back_AccAccessory.Handle["att1_Handle"].Name = "att3_Handle"
 setfpscap(120)
 function swait()
 	game.RunService.Heartbeat:wait()
@@ -3861,7 +3834,7 @@ coroutine.resume(coroutine.create(function()
         end
         if MODE ~= "Katana" and AlignedGun == true then
             AlignedGun = false
-            Character[""].Handle.att2_Handle.Parent = RightArm
+            Character["PogoStick"].Handle.att2_Handle.Parent = RightArm
             RightArm.att2_Handle.Rotation = Vector3.new(45, 90, 0)
             RightArm.att2_Handle.Position = Vector3.new(0, -2.4, -1.1)  
         end
